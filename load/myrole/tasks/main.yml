@@ -1,0 +1,6 @@
+---
+# tasks file for myrole
+ - name: jinja 2 template
+   template:
+        src: test_1.j2
+        dest: /home/manan/Desktop/xyz.txt

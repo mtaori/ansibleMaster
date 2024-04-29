@@ -1,0 +1,11 @@
+---
+ - name: Install mysql
+   hosts: target
+   become: yes
+   tasks: 
+     - name: mysql installation
+       apt:
+         name: mysql-server
+         state: present         
+     - name: remove mysql
+       command: apt remove mysql-server

@@ -1,0 +1,7 @@
+---
+# tasks file for myrole1
+ - name: file create
+   file:
+    path: /home/manan/Desktop/role_file
+    state: touch
+

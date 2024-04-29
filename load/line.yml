@@ -1,0 +1,8 @@
+---
+ - name: lineinfile module
+   hosts: target
+   tasks:
+     - name: lineinfile
+       lineinfile:
+          path: /home/manan/Desktop/load.txt
+          line: "this file made on laptop"

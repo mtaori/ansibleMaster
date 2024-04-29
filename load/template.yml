@@ -1,0 +1,5 @@
+---  
+ - name: Template mode
+   hosts: target
+   roles:
+     - myrole

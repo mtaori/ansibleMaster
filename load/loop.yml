@@ -1,0 +1,22 @@
+---
+- name: loopexample
+  hosts: target
+  tasks:
+    - name: create a file if not exist
+      file:
+        path: /home/manan/Desktop/made
+        state: directory
+
+    - name: create file
+      file:
+        path: /home/manan/Desktop/made/loop.txt
+        state: touch
+
+    - name: data in the file
+      lineinfile:
+        path: /home/manan/Desktop/made/loop.txt
+        line: "this is the laptop belongs to {{ item }}"
+      with_items:
+        - Lenovo
+        - Dell
+        - MSI

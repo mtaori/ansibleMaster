@@ -1,0 +1,11 @@
+---
+ - name: Copy script file
+   hosts: target
+   tasks:
+      - name: copy script file and permission
+        copy:
+          src: /home/einfochips/Desktop/Question1.sh
+          dest: /home/manan
+          mode: 0755
+      - name: yxf
+        command: ./Question1.sh 

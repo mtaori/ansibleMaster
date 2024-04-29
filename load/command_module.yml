@@ -1,0 +1,7 @@
+---
+ - name: command module
+   hosts: target
+   tasks:
+     - name: file cretion using touch
+       command: touch /home/manan/Desktop/load.txt
+

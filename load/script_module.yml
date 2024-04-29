@@ -1,0 +1,7 @@
+---
+ - name: script module
+   hosts: target
+   tasks:
+     - name: script file in remote
+       script: /home/einfochips/shellprogram/practrice1/Question1.sh
+

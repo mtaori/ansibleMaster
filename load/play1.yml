@@ -1,0 +1,5 @@
+---
+ - name: role file
+   hosts: target
+   roles:
+     - myrole1
